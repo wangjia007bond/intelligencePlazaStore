@@ -1,0 +1,49 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="uplaza.DressDetail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<!-- 这个界面已经废弃了 -->
+	<Page id="DressDetail" showHeader="false" enableScrolling="false" showFooter="false" >
+		<content>
+	    	<Image src="image/04 dress_bg.png" mode="Background" width="375px" height="627px"  densityAware="false"/> 			
+		    <Image class="appFooter" src="image/Rectangle 18@2x.png" width="375px" height="52px" densityAware="false"/>
+		 <!--  <Image class="appLogo" src="image/U Plaza@2x.png" width="67px" height="16px" densityAware="false" press="onFlip"/>  -->  
+			<Image class="appStore" src="image/store_b@2x.png" width="28px" height="31px" densityAware="false" />
+			<Image class="appGame" src="image/game_g@2x.png" width="30px" height="31px" densityAware="false" press="onGame"/>
+		  	<core:Icon class="appBack" src="sap-icon://nav-back" size="1.3rem" color="#FFFFFF" press="onBack"/> 	
+			<!--  <Image class="dressCart" src="image/04dress_cart.png" densityAware="false"/> -->
+			<core:Icon class="appCart" src="sap-icon://cart-4" size="1.3rem" color="#FFFFFF" />
+			
+			<Image class="dressDot1 Bottom" src="image/04dress_dotun.png" densityAware="false" />
+			<Image id="dot1" class="dressDot1 Top" src="image/04dress_dotselected.png" densityAware="false" press="onDot1"/>
+			<Image class="dressDot2 Bottom" src="image/04dress_dotun.png" densityAware="false"/>
+			<Image id="dot2" class="dressDot2 Top" src="image/04dress_dotselected.png" densityAware="false" press="onDot2"/>
+			<Image class="dressDot3 Bottom" src="image/04dress_dotun.png" densityAware="false"/>
+			<Image id="dot3" class="dressDot3 Top" src="image/04dress_dotselected.png" densityAware="false" press="onDot3"/>
+			<Text class="dressText" text="Sleevless jersey dress" />
+			<Text class="dressPrice" text="19,9" /> 
+			<Text class="dressUnit" text="EUR" />
+				
+			<core:HTML 
+			content='
+			&lt;div class=&quot;appLogo&quot; onclick=&apos;document.querySelector(&quot;#myCard&quot;).classList.toggle(&quot;flip&quot;)&apos;&gt;
+			&lt;img src=&quot;image/U Plaza@2x.png&quot; alt=&quot;Ballade&quot; width=&quot;67px&quot; height=&quot;16px&quot;&gt;
+			&lt;/img&gt;	
+			'>
+			</core:HTML>
+			
+			<core:HTML 
+			content='
+			&lt;div id=&quot;myCard&quot; class=&quot;flip-container&quot;&gt;
+				&lt;div class=&quot;flipper&quot;&gt;
+					&lt;div class=&quot;front&quot;&gt;
+						&lt;Image src=&quot;image/04dress_01.png&quot;  densityAware=&quot;false&quot;/&gt;
+					&lt;/div&gt;	
+					&lt;div class=&quot;back&quot;&gt;
+						&lt;Image src=&quot;image/04dress_01_01.png&quot;  densityAware=&quot;false&quot;/&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;'>
+			
+			</core:HTML>
+		</content>
+	</Page>
+</core:View>

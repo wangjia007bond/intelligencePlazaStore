@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="uplaza.HMMap" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="HMMap" showHeader="false" enableScrolling="false" showFooter="false">
+		<content>
+			<Image src="image/03_storemap.png" mode="Background" width="375px" height="627px"  densityAware="false"/> 			
+	 		<Image class="appFooter" src="image/Rectangle 18@2x.png" width="375px" height="52px" densityAware="false"/>
+		    <Image class="appLogo" src="image/U Plaza@2x.png" width="67px" height="16px" densityAware="false" />
+			<Image class="appStore" src="image/store_b@2x.png" width="28px" height="31px" densityAware="false" />
+			<Image class="appGame" src="image/game_g@2x.png" width="30px" height="31px" densityAware="false" press="onGame"/>
+	
+			<Image class="appHeader" src="image/05 game_header.png" densityAware="false" /> 
+			<core:Icon class="appBack" src="sap-icon://nav-back" size="1.3rem" color="rgb(155,155,155)" press="onBack"/>
+	 		<core:Icon class="appCart" src="sap-icon://person-placeholder" size="1.3rem" color="rgb(155,155,155)" press="onCenter"/>
+			<Text class="appFloor" text="Chamtime - F1" />
+			<Image class="storeYellow1" src="image/02map_dotyellow.png"  densityAware="false"/>
+			<Image class="storeYellow2" src="image/02map_dotyellow.png"  densityAware="false"/>
+			<Image class="storeYellow3" src="image/02map_dotyellow.png"  densityAware="false"/>
+			<Image class="storeDress1" src="image/Rectangle 40 + cq5dam.web.318.371 (3) Copy 2@2x.png" width="85px" height="120px"  densityAware="false"/>
+			<Image class="storeDress2" src="image/03store_dress2.png"  densityAware="false" press="onDress"/>
+			<Image class="storeDress3" src="image/03store_dress3.png"  densityAware="false"/>
+		</content>
+	</Page>
+</core:View>

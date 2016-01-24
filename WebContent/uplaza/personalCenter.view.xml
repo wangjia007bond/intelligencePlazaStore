@@ -1,0 +1,36 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="uplaza.personalCenter" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="personalCenter" showHeader="false" enableScrolling="false" showFooter="false" >
+		<content>
+			<core:Icon class="appBack" src="sap-icon://nav-back" size="1.3rem" color="rgb(155,155,155)" press="onBack"/> 	
+			<Image class="appFooter" src="image/Rectangle 18@2x.png" width="375px" height="52px" densityAware="false"/>
+		    <Image class="appLogo" src="image/U Plaza@2x.png" width="67px" height="16px" densityAware="false" press="onLogo"/>
+			<Image class="appStore" src="image/plaza@2x.png" width="28px" height="31px" densityAware="false" press="onSearch"/>
+			<Image class="appGame" src="image/game@2x.png" width="30px" height="31px" densityAware="false"/>
+			<Text class="appFloor" text="Chamtime - F1" />
+			<List class="centerList">
+	 
+			<InputListItem label="shopping history" >
+			<Switch state="true" customTextOn="On" customTextOff="Off" />
+			</InputListItem> 
+
+			<InputListItem label="figure data" >
+			<Switch state="true" customTextOn="On" customTextOff="Off" />
+			</InputListItem> 
+			
+			<InputListItem label="preference" >
+			<Switch state="true" customTextOn="On" customTextOff="Off" />
+			</InputListItem> 
+			
+			<InputListItem label="bluetooth ＆ beacon">
+			<Switch state="true" customTextOn="On" customTextOff="Off" />
+			</InputListItem> 
+		
+			</List> 
+			<core:Icon class="centerIcon1" src="sap-icon://slim-arrow-right" size="1.3rem" color="rgb(155,155,155)" /> 
+			<core:Icon class="centerIcon2" src="sap-icon://slim-arrow-right" size="1.3rem" color="rgb(155,155,155)" /> 
+			<core:Icon class="centerIcon3" src="sap-icon://slim-arrow-right" size="1.3rem" color="rgb(155,155,155)" /> 
+			<core:Icon class="centerIcon4" src="sap-icon://slim-arrow-right" size="1.3rem" color="rgb(155,155,155)" /> 
+		</content>
+	</Page>
+</core:View>

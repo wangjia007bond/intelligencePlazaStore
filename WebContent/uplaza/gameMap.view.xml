@@ -1,0 +1,34 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="uplaza.gameMap" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="gameMap" showHeader="false" enableScrolling="false" showFooter="false" >
+		<content>
+			<Image src="image/Group@2x.png" class="gameBackground" width="375px" height="535px" densityAware="false" />
+			<Image class="appFooter" src="image/Rectangle 18@2x.png" width="375px" height="52px" densityAware="false"/>
+		    <Image class="appLogo" src="image/U Plaza@2x.png" width="67px" height="16px" densityAware="false" press="onLogo"/>
+			<Image class="appStore" src="image/plaza@2x.png" width="28px" height="31px" densityAware="false" press="onSearch"/>
+			<Image class="appGame" src="image/game@2x.png" width="30px" height="31px" densityAware="false"/>
+			<core:Icon class="appBack" src="sap-icon://nav-back" size="1.3rem" color="rgb(155,155,155)" press="onBack"/>
+	 		<core:Icon class="appCart" src="sap-icon://person-placeholder" size="1.3rem" color="rgb(155,155,155)" press="onCenter"/>
+	 		<Text class="appFloor" text="Chamtime - F1" />
+	 		<Image class="zaraMap" src="image/beacon + ZARA@2x.png" width="70px" height="72px" densityAware="false"/>
+	 		<Image class="ckMap" src="image/beacon copy 2 + CK@2x.png" width="67px" height="51px" densityAware="false"/>
+	 		<Image class="lilyMap" src="image/beacon copy 3 + Lily@2x.png" width="50px" height="72px" densityAware="false"/>
+			<!-- 以下为画路线图的svg动画，通过一条会动的实线和不动的白色虚线实线 -->
+	 		<core:HTML content='
+	 		&lt;svg class=&quot;gameRoute&quot; width=&quot;293px&quot; height=&quot;453px&quot; viewBox=&quot;0 0 293 453&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xmlns:sketch=&quot;http://www.bohemiancoding.com/sketch/ns&quot;&gt;  
+            &lt;path transform=&quot;translate(-57.000000, -80.000000)&quot; id=&quot;gameMap&quot; fill=&quot;none&quot; stroke=&quot;#4A4A4A&quot; stroke-width=&quot;3&quot; 
+            d=&quot;M59.1289062,288.324219 C59.1289062,288.324219 77.390625,346.816406 113.050781,346.816406 C148.710938,346.816406 161.84375,342.177734 169.800781,322.130859 C177.757812,302.083984 152.101562,109.460938 169.800781,100.417969 C187.5,91.375 209.242188,82.2851562 231.074219,82.2851562 C252.90625,82.2851562 277.689453,101.826172 286.689453,119.783203 C295.689453,137.740234 330.714844,158.126953 336.542969,190.958984 C342.371094,223.791016 357.054688,304.117188 339.355469,318.808594 C321.65625,333.5 290.742188,315.066406 281.738281,330.941406 C272.734375,346.816406 266.960938,406.21875 252.742188,412.4375 C238.523438,418.65625 218.726562,399.308594 203.113281,412.4375 C187.5,425.566406 185.675781,443.785156 185.675781,457.964844 C185.675781,472.144531 151.457031,495.148438 160.628906,507.628906 C169.800781,520.109375 245.644531,509.914063 281.738281,515.740234 C317.832031,521.566406 314.875,532.328125 314.875,532.328125&quot;&gt;&lt;/path&gt;
+      		&lt;/svg&gt;
+	 		'>
+	 		</core:HTML>
+	 		<core:HTML content='
+	 		&lt;svg class=&quot;gameRouteDash&quot; width=&quot;293px&quot; height=&quot;453px&quot; viewBox=&quot;0 0 293 453&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xmlns:sketch=&quot;http://www.bohemiancoding.com/sketch/ns&quot;&gt;  
+            &lt;path transform=&quot;translate(-57.000000, -80.000000)&quot; id=&quot;gameMap&quot; fill=&quot;none&quot; stroke=&quot;#FFFFFF&quot; stroke-width=&quot;4&quot; stroke-opacity=&quot;1.0&quot;
+            d=&quot;M59.1289062,288.324219 C59.1289062,288.324219 77.390625,346.816406 113.050781,346.816406 C148.710938,346.816406 161.84375,342.177734 169.800781,322.130859 C177.757812,302.083984 152.101562,109.460938 169.800781,100.417969 C187.5,91.375 209.242188,82.2851562 231.074219,82.2851562 C252.90625,82.2851562 277.689453,101.826172 286.689453,119.783203 C295.689453,137.740234 330.714844,158.126953 336.542969,190.958984 C342.371094,223.791016 357.054688,304.117188 339.355469,318.808594 C321.65625,333.5 290.742188,315.066406 281.738281,330.941406 C272.734375,346.816406 266.960938,406.21875 252.742188,412.4375 C238.523438,418.65625 218.726562,399.308594 203.113281,412.4375 C187.5,425.566406 185.675781,443.785156 185.675781,457.964844 C185.675781,472.144531 151.457031,495.148438 160.628906,507.628906 C169.800781,520.109375 245.644531,509.914063 281.738281,515.740234 C317.832031,521.566406 314.875,532.328125 314.875,532.328125&quot;&gt;&lt;/path&gt;
+      		&lt;/svg&gt;
+	 		'>
+	 		</core:HTML>
+
+		</content>
+	</Page>
+</core:View>

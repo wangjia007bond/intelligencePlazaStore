@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="uplaza.storeSearch" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="storeSearch" showHeader="false" enableScrolling="false" showFooter="false">
+		<content>
+			 <Image src="image/00_loading.png" mode="Background" width="375px" height="627px"  densityAware="false"/>   
+			 <!-- 向外扩展的圆圈动画  -->
+			 <core:HTML content='
+			&lt;svg class=&quot;circleSearch&quot; version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;-60px&quot; viewBox=&quot;0 41 200 300&quot; xml:space=&quot;preserve&quot;&gt;
+
+  
+    &lt;g class=&quot;auto_intro_money circleSearch&quot;&gt;
+        &lt;circle id=&quot;circle&quot; class=&quot;pulse&quot; fill=&quot;transparent&quot; stroke=&quot;rgb(0,158,219)&quot; stroke-width=&quot;10&quot; stroke-miterlimit=&quot;10&quot; cx=&quot;100&quot; cy=&quot;207&quot; r=&quot;60&quot; /&gt;
+
+        &lt;circle id=&quot;circle&quot; class=&quot;pulse&quot; fill=&quot;transparent&quot; stroke=&quot;rgb(0,158,219)&quot; stroke-width=&quot;10&quot; stroke-miterlimit=&quot;15&quot; cx=&quot;100&quot; cy=&quot;207&quot; r=&quot;45&quot; /&gt;
+ 
+    &lt;/g&gt;
+&lt;/svg&gt;
+			'>
+			</core:HTML>
+			 <Image class="hmBeacon" src="image/beacon + HM@2x.png" width="34px" height="75px" densityAware="false" press="onBeacon"/>
+		</content>
+	</Page>
+</core:View>

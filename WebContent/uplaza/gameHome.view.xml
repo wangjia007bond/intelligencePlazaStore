@@ -1,0 +1,21 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="uplaza.gameHome" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="gameHome" showHeader="false" enableScrolling="false" showFooter="false">
+		<content>
+			<Image src="image/Group33@2x.png" width="375px" height="535px" class="gameBackground" densityAware="false" />
+			<Image class="appFooter" src="image/Rectangle 18@2x.png" width="375px" height="52px" densityAware="false"/>
+		    <Image class="appLogo" src="image/U Plaza@2x.png" width="67px" height="16px" densityAware="false" />
+		<!-- <Image class="appStore Top" src="image/store_b@2x.png" width="28px" height="31px" densityAware="false"/>  -->	
+			<Image class="appStore" src="image/plaza@2x.png" width="28px" height="31px" densityAware="false" press="onStore"/>
+			<Image class="appGame" src="image/game@2x.png" width="28px" height="31px" densityAware="false"/>
+		<!--  <Image class="appGame Bottom" src="image/game_g@2x.png" width="28px" height="31px" densityAware="false"/> -->	
+			<Image class="movieTicket" src="image/Rectangle 58 + Bitmap@2x.png" width="365px" height="166px" densityAware="false" press="onTicket"/>
+			<core:Icon class="appBack" src="sap-icon://menu2" size="1.3rem" color="rgb(155,155,155)" press="onMenu"/>
+	 		<core:Icon class="appCart" src="sap-icon://person-placeholder" size="1.3rem" color="rgb(155,155,155)" press="onCenter"/>
+	 		<Text class="appFloor" text="Chamtime - F1" />
+	 		<Text class="gameWelcome" text="You may like" />
+	 		
+			
+		</content>
+	</Page>
+</core:View>

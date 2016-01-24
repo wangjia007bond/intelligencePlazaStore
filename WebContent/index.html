@@ -1,0 +1,654 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+.loginPortrait{
+	position: absolute;
+	top: 95px;
+	left: 120px;
+	z-index: 0;
+}
+.loginLogo{
+	position: absolute;
+	top: 260px;
+	left: 150px;
+	z-index: 0;
+}
+.loginButton{
+	position: absolute;
+	top: 490px;
+	left: 90px;
+	z-index: 0;
+}
+.login{
+	position: absolute;
+	top: 500px;
+	left: 160px;
+	z-index: 1;
+	color: rgb(0,158,219);
+	font-size: 18px !important;
+}
+.loginLine1{
+	position: absolute;
+	top: 420px;
+	left: 91px;
+	z-index: 0;
+}
+.loginLine2{
+	position: absolute;
+	top: 460px;
+	left: 91px;
+	z-index: 0;
+}
+.loginName{
+	position: absolute !important;
+	top: 385px;
+	left: 145px;
+	z-index: 1;
+	color: rgb(255,255,255);
+	font-size: 18px !important;
+}
+
+.loginPsw{
+	position: absolute !important;
+	top: 425px;
+	left: 145px;
+	z-index: 2;	
+}
+.sapMInputBaseInner {
+    color: #FFFFFF !important;
+    background-color: transparent !important;
+    border: transparent !important;
+    width: 25% !important;
+    margin: 0;
+    font-size: 18px !important;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: normal;
+    height: 2.5rem;
+    vertical-align: top;
+    padding: 0 0.75rem;
+}
+.password{
+	position: absolute;
+	top: 460px;
+	left: 90px;
+	z-index: 0;
+}
+.loginText1{
+	position: absolute;
+	top: 290px;
+	left: 130px;
+	z-index: 0;
+	color: #FFFFFF;
+	font-size: 14px !important;
+}
+.loginText2{
+	position: absolute;
+	top: 310px;
+	left: 90px;
+	z-index: 0;
+	color: #FFFFFF;
+	font-size: 14px !important;
+}
+.appStore{
+	position: absolute;
+	top: 585px;
+	left: 35px;
+	z-index: 0;
+}
+.appGame{
+	position: absolute;
+	top: 585px;
+	left: 310px;
+	z-index: 0;
+}
+.mapRed1{
+	position: absolute;
+	top: 485px;
+	left: 82px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapRed2{
+	position: absolute;
+	top: 475px;
+	left: 185px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapRed3{
+	position: absolute;
+	top: 145px;
+	left: 320px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapRed4{
+	position: absolute;
+	top: 225px;
+	left: 40px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapPurple1{
+	position: absolute;
+	top: 320px;
+	left: 230px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapPurple2{
+	position: absolute;
+	top: 510px;
+	left: 300px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapPink1{
+	position: absolute;
+	top: 340px;
+	left: 285px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapPink2{
+	position: absolute;
+	top: 180px;
+	left: 280px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapGrey1{
+	position: absolute;
+	top: 85px;
+	left: 10px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapGrey2{
+	position: absolute;
+	top: 320px;
+	left: 170px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.appHeader{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+.appFooter{
+	position: absolute;
+	top: 575px;
+	left: 0px;
+	z-index: 0;
+}
+.appLogo{
+	position: absolute;
+	top: 595px;
+	left: 152px;
+	z-index: 1;
+}
+.mapYellow{
+	position: absolute;
+	top: 225px;
+	left: 40px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.mapHM{
+	position: absolute;
+	top: 115px;
+	left: 50px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.storeYellow1{
+	position: absolute;
+	top: 90px;
+	left: 80px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.storeYellow2{
+	position: absolute;
+	top: 305px;
+	left: 215px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.storeYellow3{
+	position: absolute;
+	top: 370px;
+	left: 305px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.storeDress1{
+	position: absolute;
+	top: 98px;
+	left: 85px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.storeDress2{
+	position: absolute;
+	top: 210px;
+	left: 220px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.storeDress3{
+	position: absolute;
+	top: 375px;
+	left: 240px;
+	z-index: 0;
+	opacity: 0.0;
+}
+.appBack{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	z-index: 1;
+}
+.appCart{
+	position: absolute;
+	top: 10px;
+	left: 340px;
+	z-index: 1;
+}
+.appFloor{
+	position: absolute;
+	top: 10px;
+	left: 135px;
+	z-index: 1;
+	color:rgb(0,158,219);
+	font-size:18px !important; 
+}
+.dressRed{
+	position: absolute;
+	top: 120px;
+	left: 88px;
+	z-index: 0;
+}
+.dressDot1{
+	position: absolute;
+	top: 545px;
+	left: 150px;
+	z-index: 2;
+}
+.dressDot2{
+	position: absolute;
+	top: 545px;
+	left: 180px;
+	z-index: 2;
+}
+.dressDot3{
+	position: absolute;
+	top: 545px;
+	left: 210px;
+	z-index: 2;
+}
+.Top{
+	position: absolute;
+	opacity: 0.0;
+	z-index: 1;
+}
+.Bottom{
+	position: absolute;
+	opacity: 1.0;
+	z-index: 0;
+}
+.dressText{
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	z-index: 0;
+	color:rgb(0,158,219); 
+	font-size:20px !important; 
+}
+.dressPrice{
+	position: absolute;
+	top: 20px;
+	left: 245px;
+	z-index: 0;
+	color:rgb(0,158,219);
+	font-size:30px !important; 
+}
+.dressUnit{
+	position: absolute;
+	top: 35px;
+	left: 320px;
+	z-index: 0;
+	color:rgb(0,158,219);
+	font-size:14px !important; 
+}
+
+/* entire container, keeps perspective */
+.flip-container{
+	perspective: 1000;
+
+}
+/* flip the pane when hovered */
+.flip-container.flip .flipper{
+	transform: rotateY(180deg);
+}
+.flip-container, .front, .back{
+	width: 266px;
+	height: 439px;
+	position: absolute;
+	top: 60px;
+	left: 48px;
+	z-index: 0;
+}
+
+/* flip speed goes here */
+.flipper{
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;	
+}
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	
+	top: 0;
+	left: 0;
+}
+/* front pane, placed above back */
+.front{
+	z-index: 2;
+}
+/* back, initially hidden pane */
+.back{
+	transform: rotateY(180deg);
+	z-index: 1;
+}
+.gameBackground{
+	position: absolute;
+	top: 40px;
+}
+.movieTicket{
+	position: absolute;
+	top: 100px;
+	left: 5px;
+	z-index: 1;
+}
+.gameRoute{
+	position: absolute;
+	top: 50px;
+	left: 60px; 
+	z-index: 0;
+	stroke-dasharray: 1600;
+	stroke-dashoffset: 1600;
+	animation: dash 5s linear forwards;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+.pulse {
+    animation: pulse 2s linear infinite;
+    -webkit-transform-origin: 50% 50%;
+}
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5, 1.5);
+    }
+}
+.auto_intro_money {
+    animation: scale 1s ease-out forwards;
+    opacity: 0;
+    -webkit-transform: scale(0.2, 0.2);
+    -webkit-transform-origin: 50% 50%;
+}
+@keyframes scale {
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1, 1);
+    }
+}
+.circleSearch{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.circle1{
+	position: absolute;
+	top: 172px;
+	left: 47px;
+	z-index: 1;
+}
+.zaraBeacon{
+	position: absolute;
+	top: 165px;
+	left: 220px;
+	z-index: 2;
+	opacity: 0.0;
+}
+.lilyBeacon{
+	position: absolute;
+	top: 370px;
+	left: 240px;
+	z-index: 2;
+	opacity: 0.0;
+}
+.ckBeacon{
+	position: absolute;
+	top: 340px;
+	left: 75px;
+	z-index: 2;
+	opacity: 0.0;
+}
+.plazaBeacon{
+	position: absolute;
+	top: 170px;
+	left: 210px;
+	z-index: 2;
+	opacity: 0.0;
+}
+.floorList{
+	position: absolute !important; 
+	top: 50px !important;
+}
+.selectedColor{
+	color:rgb(0,158,219) !important;
+}
+.hmBeacon{
+	position: absolute;
+	top: 220px;
+	left: 80px;
+	z-index: 2;
+	opacity: 0.0;
+}
+.gameRouteDash{
+	position: absolute;
+	top: 50px;
+	left: 60px; 
+	z-index: 1;
+	stroke-dasharray: 10;
+}
+.phoneLogo{
+	position: absolute;
+	top: 240px;
+	left: 116px;
+	z-index: 2;
+}
+.gameWelcome{
+	position: absolute;
+	top: 58px;
+	left: 15px;
+	z-index: 0;
+	color:rgb(255,255,255);
+	font-size: 16px !important;
+}
+.completeLogo{
+	position: absolute;
+	top: 175px;
+	left: 255px;
+	z-index: 2;
+	opacity: 0.0;
+}
+.zaraMap{
+	position: absolute;
+	top: 35px;
+	left: 265px;
+	z-index: 3;
+}
+.ckMap{
+	position: absolute;
+	top: 400px;
+	left: 150px;
+	z-index: 3;
+}
+.lilyMap{
+	position: absolute;
+	top: 460px;
+	left: 295px;
+	z-index: 3;
+}
+.container{
+	position: absolute;
+	top: 40px;
+	left: 0px;
+}
+.centerList{
+	position: absolute;
+	top: 40px;
+	left: 0px;
+}
+.centerIcon1{
+	position: absolute;
+	left: 20px;
+	top:55px;
+}
+.centerIcon2{
+	position: absolute;
+	left: 20px;
+	top:102px;
+}
+.centerIcon3{
+	position: absolute;
+	left: 20px;
+	top:150px;
+}
+.centerIcon4{
+	position: absolute;
+	left: 20px;
+	top:197px;
+}
+label.sapMILILabel {
+    position: relative;
+    left: 30px;
+    top: inherit;
+}
+.checkHeader{
+	position: absolute;
+	top: 10px;
+	left: 145px;
+	z-index: 1;
+	color:rgb(255,255,255);
+	font-size:18px !important; 
+}
+.checkObject {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    width: 300px;
+}
+.formDetail{
+	position: absolute;
+	top: 40px;
+	left: 0px;
+}
+.checkDress{
+	position: absolute;
+	top: 60px;
+}
+.checkPay{
+	position: absolute;
+	top: 510px;
+	left:111px;
+}
+.checkBox{
+	position: absolute;
+	top: 355px;
+	left: 38px;
+	font-size: 14px !important;
+}
+.checkTriangle{
+	position: absolute;
+	top: 360px;
+	left: 120px;
+}
+.checkText1{
+    position: absolute;
+    top: 400px;
+    left: 110px;
+    font-size: 13px !important;
+}
+.checkText2{
+	position: absolute;
+    top: 420px;
+    left: 80px;
+    font-size: 13px !important;
+}
+.checkText3{
+	position: absolute;
+    top: 440px;
+    left: 37px;
+    font-size: 13px !important;
+}
+.dress111{
+	position: absolute !important;
+    top: 50px;
+    left: 40px;
+    z-index: 1;
+    opacity: 1.0;
+}
+.dress112{
+	position: absolute !important;
+    top: 50px;
+    left: 40px;
+    z-index: 1;
+    opacity: 0.0;
+}
+</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+<!-- <script type='text/javascript' src='js/circle-progress.js'></script>  -->
+<!-- <script type='text/javascript' src='js/jquery.easing.1.2.js'></script>  -->
+<script src="resources/sap/ui/thirdparty/datajs.js"></script>
+
+<!--  script src="resources/sap-ui-core.js" -->
+<script src="resources/sap-ui-cachebuster/sap-ui-core.js"
+		id="sap-ui-bootstrap"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-theme="sap_bluecrystal">
+</script>
+<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+<script>
+		sap.ui.localResources("uplaza");
+		var app = new sap.m.App({id:"theApp",initialPage:"idhomepage1"});
+		var page = sap.ui.view({id:"idhomepage1", viewName:"uplaza.homepage", type:sap.ui.core.mvc.ViewType.XML});
+		app.setBackgroundColor("#FFFFFF");
+		app.addPage(page);
+		app.placeAt("content");
+</script>
+</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

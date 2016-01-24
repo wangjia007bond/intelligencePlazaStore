@@ -1,0 +1,140 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="uplaza.dressSelect" xmlns:html="http://www.w3.org/1999/xhtml">
+<Page id="dressSelect" showHeader="false" enableScrolling="true" showFooter="false">	
+	<content>
+		<core:HTML>
+		</core:HTML>
+		<NavContainer
+			id="navCon"
+			width="375px"
+			height="500px"
+			class="navContainerControl sapUiSmallMarginBottom container">
+      <Page id="Dress1" showHeader="false" enableScrolling="false" showFooter="false">
+			<Text class="dressText" text="Sleevless jersey dress" />
+	  		<Text class="dressPrice" text="19.9" />	  		
+	  		<!-- 
+			<core:HTML 
+			content='
+			&lt;div id=&apos;dressSelectbtn&apos;&gt;
+			&lt;span id=&quot;__text1&quot; data-sap-ui=&quot;__text1&quot; class=&quot;dressUnit sapMText sapMTextBreakWord sapMTextMaxWidth&quot; style=&quot;direction:inherit;text-align:left&quot;&gt;EUR&lt;/span&gt;
+			&lt;/div&gt;
+			'>
+			</core:HTML>
+			 -->
+			<!-- 卡片翻转动画，在iphone上点会有问题 -->		
+			<core:HTML 
+			content='
+			&lt;div onclick=&apos;document.querySelector(&quot;#myCard&quot;).classList.toggle(&quot;flip&quot;)&apos;&gt;
+			&lt;span id=&quot;__text1&quot; data-sap-ui=&quot;__text1&quot; class=&quot;dressUnit sapMText sapMTextBreakWord sapMTextMaxWidth&quot; style=&quot;direction:inherit;text-align:left&quot;&gt;EUR&lt;/span&gt;
+			&lt;/div&gt;
+			'>
+			</core:HTML>
+		   
+			<core:HTML 
+			content='
+			&lt;div id=&quot;myCard&quot; class=&quot;flip-container&quot;&gt;
+				&lt;div class=&quot;flipper&quot;&gt;
+					&lt;div class=&quot;front&quot;&gt;
+						&lt;Image src=&quot;image/04dress_01.png&quot;  densityAware=&quot;false&quot;/&gt;
+					&lt;/div&gt;	
+					&lt;div class=&quot;back&quot;&gt;
+						&lt;Image src=&quot;image/04dress_01_01.png&quot;  densityAware=&quot;false&quot;/&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;'>
+			
+			</core:HTML>
+			</Page>
+	<Page id="Dress2" showHeader="false" enableScrolling="false" showFooter="false">
+			<Text class="dressText" text="Sleevless chiffon dress" />
+			<Text class="dressPrice" text="39.9" /> 
+			
+			 <core:HTML 
+			content='
+			&lt;div onclick=&apos;document.querySelector(&quot;#myCard2&quot;).classList.toggle(&quot;flip&quot;)&apos; &gt;
+			&lt;span id=&quot;__text1&quot; data-sap-ui=&quot;__text1&quot; class=&quot;dressUnit sapMText sapMTextBreakWord sapMTextMaxWidth&quot; style=&quot;direction:inherit;text-align:left&quot;&gt;EUR&lt;/span&gt;
+			&lt;/div&gt;
+			'>
+			</core:HTML> 
+			
+			<core:HTML 
+			content='
+			&lt;div id=&quot;myCard2&quot; class=&quot;flip-container&quot;&gt;
+				&lt;div class=&quot;flipper&quot;&gt;
+					&lt;div class=&quot;front&quot;&gt;
+						&lt;Image src=&quot;image/dress2@2x.png&quot; width=&quot;266px&quot; width=&quot;439px&quot; densityAware=&quot;false&quot;/&gt;
+					&lt;/div&gt;	
+					&lt;div class=&quot;back&quot;&gt;
+						&lt;Image src=&quot;image/tryon2@2x.png&quot; width=&quot;266px&quot; width=&quot;439px&quot; densityAware=&quot;false&quot;/&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;'>
+			
+			</core:HTML>
+			</Page>
+	<Page id="Dress3" showHeader="false" enableScrolling="false" showFooter="false">
+			<Text class="dressText" text="Sleevless chiffon dress" />
+			<Text class="dressPrice" text="89.9" /> 
+			
+			
+			<core:HTML 
+			content='
+			&lt;div onclick=&apos;document.querySelector(&quot;#myCard3&quot;).classList.toggle(&quot;flip&quot;)&apos; &gt;
+			&lt;span id=&quot;__text1&quot; data-sap-ui=&quot;__text1&quot; class=&quot;dressUnit sapMText sapMTextBreakWord sapMTextMaxWidth&quot; style=&quot;direction:inherit;text-align:left&quot;&gt;EUR&lt;/span&gt;
+			&lt;/div&gt;
+			'>
+			</core:HTML>
+			
+			<core:HTML 
+			content='
+			&lt;div id=&quot;myCard3&quot; class=&quot;flip-container&quot;&gt;
+				&lt;div class=&quot;flipper&quot;&gt;
+					&lt;div class=&quot;front&quot;&gt;
+						&lt;Image src=&quot;image/dress3@2x.png&quot; width=&quot;266px&quot; width=&quot;439px&quot; densityAware=&quot;false&quot;/&gt;
+					&lt;/div&gt;	
+					&lt;div class=&quot;back&quot;&gt;
+						&lt;Image src=&quot;image/tryon3@2x.png&quot; width=&quot;266px&quot; width=&quot;439px&quot; densityAware=&quot;false&quot;/&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;'>
+			
+			</core:HTML>
+			
+			</Page>
+		</NavContainer>
+		<Image class="appFooter" src="image/Rectangle 18@2x.png" width="375px" height="52px" densityAware="false"/>
+    <Image class="appStore" src="image/store_b@2x.png" width="28px" height="31px" densityAware="false" />
+	<Image class="appGame" src="image/game_g@2x.png" width="30px" height="31px" densityAware="false" press="onGame"/>
+	<Image class="appLogo" src="image/U Plaza@2x.png" width="67px" height="16px" densityAware="false" />
+	<Image class="appHeader" src="image/Rectangle 35@2x.png" width="375px" height="40px" densityAware="false"/>
+	<core:Icon class="appBack" src="sap-icon://nav-back" size="1.3rem" color="#FFFFFF" press="onBack"/> 	
+	<core:Icon class="appCart" src="sap-icon://cart-4" size="1.3rem" color="#FFFFFF" press="onCheckOut"/> 
+	
+			<Image id="Dot1" class="dressDot1" src="image/04dress_dotselected.png" densityAware="false"
+				press="handleNav">
+				<customData>
+					<core:CustomData
+						key="target"
+						value="Dress1" />
+				</customData>
+			</Image>
+			<Image id="Dot2" class="dressDot2" src="image/04dress_dotun.png" densityAware="false"
+				press="handleNav">
+				<customData>
+					<core:CustomData
+						key="target"
+						value="Dress2" />
+				</customData>
+			</Image>
+			<Image id="Dot3" class="dressDot3" src="image/04dress_dotun.png" densityAware="false"
+				press="handleNav">
+				<customData>
+					<core:CustomData
+						key="target"
+						value="Dress3" />
+				</customData>
+			</Image>
+		  	      
+	</content>
+	</Page>
+</core:View>

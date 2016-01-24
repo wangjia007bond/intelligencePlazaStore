@@ -1,0 +1,46 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="uplaza.CheckOut" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="CheckOut" showHeader="false" enableScrolling="false" showFooter="false" >
+			
+			<Image class="checkDress" src="image/Rectangle 20 + 2@2x.png" width="375px" height="250px" densityAware="false" />
+			<Image class="appHeader" src="image/Rectangle 35@2x.png" width="375px" height="40px" densityAware="false"/>
+			<Image class="appFooter" src="image/Rectangle 18@2x.png" width="375px" height="52px" densityAware="false"/>
+			<Image class="appStore" src="image/store_b@2x.png" width="28px" height="31px" densityAware="false" />
+			<Image class="appGame" src="image/game_g@2x.png" width="30px" height="31px" densityAware="false" press="onGame"/>
+		  	<Image class="appLogo" src="image/U Plaza@2x.png" width="67px" height="16px" densityAware="false" press="onLogo"/>
+		  	<core:Icon class="appBack" src="sap-icon://nav-back" size="1.3rem" color="#FFFFFF" press="onBack"/> 
+		  	<Text class="checkHeader" text="Check Out" />	
+		  	<ObjectHeader class="checkObject" title="Sleevless jersey dress" number="19.9" numberUnit="EUR">
+		  	</ObjectHeader>
+		  	<Text class="checkBox" text="M(170|96A)" />
+			<Image class="checkTriangle" src="image/Triangle 5@2x.png" width="13px" height="9px" densityAware="false"/>
+		 	<Image class="checkPay" src="image/Rectangle 95 + Pay Now@2x.png" width="152px" height="32px" densityAware="false" />
+	<!--	<f:Form id="FormDetail" class="formDetail"
+				minWidth="100px"
+				maxContainerCols="2"
+				editable="false">
+				<f:formContainers>
+					<f:FormContainer>
+						<f:formElements>
+							<f:FormElement label="CONCEPT">
+								<f:fields>
+									<Input value="DIVIDED" />
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="COMPOSITION">
+								<f:fields>
+									<Input value="Polyester 94%;Elastane 6%" />	
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+				</f:formContainers>
+			
+			</f:Form>
+			  -->	
+		<Text class="checkText1" text="CONCEPT:  DIVIDED" />		
+		<Text class="checkText2" text="COMPOSITION:  Polyester 94%; Elastane 6%" />	
+		<Text class="checkText3" text="CARE INSTRUCTIONS:  Machine wash at 40°" />	
+	</Page>
+</core:View>

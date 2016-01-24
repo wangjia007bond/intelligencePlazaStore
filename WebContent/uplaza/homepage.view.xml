@@ -1,0 +1,24 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="uplaza.homepage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page showHeader="false" id="homepage" showFooter="true" enableScrolling="false">
+		<content>
+	  		<Image src="image/homepage_bg_627.png" mode="Background" width="375px" height="627px"  densityAware="false"/>  
+	        <Image id="login_av" src="image/Oval 11 + 276095_h_ergb_s_gl@2x.png"  width="135px" height="135px" densityAware="false"/> 
+	        <Image id="login_logo" src="image/login_logo.png" densityAware="false"/>
+			<Text class="loginText1" text="Your Pocket Plaza" />
+			<Text class="loginText2" text="Intelligent and Simple Shopping" />
+			<Text class="login" text="LOGIN" />
+			<Image src="image/Line@2x.png" class="loginLine1" width="193px" height="2px" densityAware="false" /> 
+			<Image src="image/Line@2x.png" class="loginLine2" width="193px" height="2px" densityAware="false" /> 
+	<!--  <Text text="Jing" class="loginName"/>-->		
+			<Input class="loginName"
+				placeholder="username" />
+			<Input class="loginPsw"
+				type="Password"
+				placeholder="password" />
+			
+			<Image class="loginButton" src="image/Rectangle 57@2x.png" width="195px" height="40px" densityAware="false" press="onPress" />
+		<!-- <Input class="password" type="Password" />  -->	
+		</content>
+	</Page>
+</core:View>
